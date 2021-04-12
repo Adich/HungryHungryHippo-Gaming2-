@@ -1,0 +1,17 @@
+﻿<Window x:Class="HungryHungry.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HungryHungry"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Canvas x:Name="paintCanvas" HorizontalAlignment="Left" Height="420" VerticalAlignment="Top" Width="794" Margin="0,0,-0.4,0">
+
+
+        </Canvas>
+        <Canvas x:Name="PlayerArea" Canvas.Top="365" Width="794" Margin="0,0,-0.4,0"/>
+        <Label x:Name="Scorelbl" Content="0" Canvas.Left="339" Canvas.Top="162" Width="185" Height="113" FontSize="48"/>
+    </Grid>
+</Window>
