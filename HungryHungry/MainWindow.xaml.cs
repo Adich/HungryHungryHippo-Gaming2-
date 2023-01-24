@@ -71,7 +71,7 @@ namespace HungryHungry
             foodTimer.Interval = DAMNSLOW;
             foodTimer.Start();
 
-
+            //Her er der en ny eventhandler
             this.KeyDown += new KeyEventHandler(OnButtonKeyDown);
             paintPlayer(startingPoint);
             currentPosition = startingPoint;
@@ -102,8 +102,8 @@ namespace HungryHungry
 
             if (length == 0)
             {
-            length = rnd.Next(20, 200);
-            addFood();
+                length = rnd.Next(20, 200);
+                addFood();
 
             }
             else
@@ -124,13 +124,9 @@ namespace HungryHungry
                 if ((Math.Abs(food.position.X - currentPosition.X) < (playerLenght/2)) &&
                     (Math.Abs(food.position.Y - currentPosition.Y) < pointSize))
                 {
-
                     score++;
-
                     Scorelbl.Content = score;
-                    
                     foodList.RemoveAt(n);
-                    
                     break;
                 }
                 n++;
